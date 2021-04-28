@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_16">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="150dp"
+                android:id="@+id/build_status"
+                android:background="@drawable/rectangle_green"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/build_status"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCoin"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:padding="@dimen/dp_8"
+                android:text="500"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/txtMarket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="feature/bitwall_init_asdfasdfasd_Fasdfasdf_Asdf"
+                android:textColor="@android:color/black"
+                android:padding="@dimen/dp_8"/>
+
+            <TextView
+                android:id="@+id/txtWorkflow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="primary"
+                android:padding="@dimen/dp_8"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnView"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Artifacts"
+                android:padding="@dimen/dp_8"
+                android:textAllCaps="false"
+                android:textColor="#0645AD"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnLogs"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Logs"
+                    android:padding="@dimen/dp_8"
+                    android:textAllCaps="false"
+                    android:textColor="#0645AD"/>
+
+            </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
